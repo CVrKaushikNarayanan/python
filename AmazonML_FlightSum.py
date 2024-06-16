@@ -1,5 +1,8 @@
-n = input("list")
-k1 = list(map(int,input().split()))
+n = int(input("Number of Elements"))
+k=[]
+for i in range(n):
+    k.append(int(input("-->")))
+    
 def mini(i,n):
     if(i+3<len(n)):
         a=abs(abs(n[i])-abs(n[i+1]))
@@ -27,5 +30,4 @@ def sd(n):
         c+=b
         #print(i,c)
     print(c)
-k = [1,4 ,5,2]
 sd(k)
